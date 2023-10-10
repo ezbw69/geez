@@ -52,7 +52,7 @@
     "formation": {
         "worker": {
           "quantity": 1,
-          "version": "12"
+          "size": "basic"
         }
       }
   }
