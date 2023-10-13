@@ -132,7 +132,7 @@ async def pingme(client: Client, message: Message):
     await xx.edit("**Pinging...**")
     await xx.edit("**Pinging....**")
     await asyncio.sleep(1)
-    await xx.edit(f"**heroinfather🕷**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
+    await xx.edit(f"**𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥🕷**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
 
 @Client.on_message(filters.command("ping", "!") & SUDO_USER)
 @geez("ping", cmds)
@@ -144,7 +144,7 @@ async def pings(client, message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     _ping = f"""
-    <b>heroinfather🕷</b>
+    <b>𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥🕷</b>
     <i> Ping:</i> `{delta_ping} ms`
     <i> Uptime:</i> `{uptime}`
     """
@@ -185,6 +185,6 @@ add_command_help(
     "alive",
     [
         [f"{cmds}alive", "Check bot alive or not."],
-        [f"{cmds}geez", "Check bot alive or not."],
+        [f"{cmds}hero", "Check bot alive or not."],
     ],
 )
