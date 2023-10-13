@@ -10,13 +10,12 @@ from Geez.modules.basic.heroku import geez_log
 from geezlibs.geez.utils.geezlogs import izzy_meira, geezlog
 
 MSG_ON = """
-**Geez Pyro Userbot**
+**𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥🕷**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 **Userbot Version -** `{}`
-**Geez Library Version - `{}`**
-**Ketik** `{}geez` **untuk Mengecheck Bot**
+**𝗛𝗘𝗥𝗢 Library Version - `{}`**
+**Ketik** `{}hero` **untuk Mengecheck Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
-©️2023 Geez|RAM Projects
 """
 
 async def main():
@@ -45,6 +44,6 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("Geez").info("Starting Geez Pyro Userbot")
+    LOGGER("Geez").info("Starting 𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥")
     install()
     LOOP.run_until_complete(main())
