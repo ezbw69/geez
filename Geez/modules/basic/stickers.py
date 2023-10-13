@@ -254,13 +254,13 @@ async def kang(client: Client, message: Message):
         ):
             emoji_ = None
         if not emoji_:
-            emoji_ = "✨"
+            emoji_ = "🕷"
 
         u_name = user.username
         u_name = "@" + u_name if u_name else user.first_name or user.id
         packname = f"Sticker_u{user.id}_v{pack}"
-        custom_packnick = f"{u_name} Sticker Pack"
-        packnick = f"{custom_packnick} Vol.{pack}"
+        custom_packnick = f"𝗛𝗘𝗥𝗢"
+        packnick = f"{custom_packnick} v{pack}"
         cmd = "/newpack"
         if resize:
             media_ = await resize_media(media_, is_video, ff_vid)
@@ -287,7 +287,7 @@ async def kang(client: Client, message: Message):
             if exist.set.count >= limit:
                 pack += 1
                 packname = f"a{user.id}_by_geezram_{pack}"
-                packnick = f"{custom_packnick} Vol.{pack}"
+                packnick = f"{custom_packnick} v{pack}"
                 if is_anim:
                     packname += f"_anim{pack}"
                     packnick += f" (Animated){pack}"
@@ -602,7 +602,7 @@ async def handwrite(client, message):
     output_txt = requests.get(f"https://api.sdbots.tk/write?text={input_txt}").url
     await message.reply_photo(
         photo=output_txt,
-        caption="**Powered by Geez|Ram**")
+        caption="**Powered by 𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥🕷**")
     await msg_procces.delete()
 
 add_command_help(
