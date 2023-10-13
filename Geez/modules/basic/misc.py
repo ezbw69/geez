@@ -28,10 +28,10 @@ from Geez.modules.basic import add_command_help
 from Geez import cmds
 
 geezlogo = [
-    "https://telegra.ph/file/d03ce0fb84f81be3aeb09.png",
-    "https://telegra.ph/file/200355acbe58c46400f5b.png",
-    "https://telegra.ph/file/c78bb1efdeed38ee16eb2.png",
-    "https://telegra.ph/file/4143843c984a8ecdc813e.png"
+    "https://telegra.ph/file/7fb86115e186a19fdeba1.jpg",
+    "https://telegra.ph/file/7fb86115e186a19fdeba1.jpg",
+    "https://telegra.ph/file/7fb86115e186a19fdeba1.jpg",
+    "https://telegra.ph/file/7fb86115e186a19fdeba1.jpg"
 ]
 
 alive_logo = ALIVE_PIC or random.choice(geezlogo)
@@ -40,16 +40,16 @@ if ALIVE_TEXT:
    txt = ALIVE_TEXT
 else:
     txt = (
-        f"**Geez Pyro Userbot**\n\n"
+        f"**𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥🕷**\n\n"
         f"〄 **Versi**: `{BOT_VER}`\n"
         f"  ├• **Uptime**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
         f"  ├• **Phython**: `{python_version()}`\n"
         f"  ├• **Pyrogram**: `{__version__}`\n"
         f"  └• **Geez Library**: `{gver}`\n\n"
-        f"©️2023 [Geez|RAM Support](t.me/GeezRam)\n"
+        f"[WORST PARTY INC](t.me/worstpartyinc)\n"
     )
 
-@geez("geez", cmds)
+@geez("hero", cmds)
 async def module_help(client: Client, message: Message):
     await logging(client)
     cmd = message.command
@@ -99,7 +99,7 @@ async def repo(bot: Client, message: Message):
     await asyncio.sleep(1)
     await message.edit("Mengambil informasi repo.....")
     await asyncio.sleep(1)
-    await message.edit("repo Geez-Pyro Official: \n\n\nhttps://github.com/hitokizzy/Geez-Pyro")
+    await message.edit("repo hero editan, based on geez pyro")
 
 
 @geez("creator", cmds)
