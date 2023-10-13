@@ -33,7 +33,7 @@ async def dm(coli: Client, memek: Message):
     if memek.reply_to_message:
         reply_to_id = memek.reply_to_message.message_id
         for _ in range(quantity):
-            await geez.edit("Message Sended Successfully 😘")
+            await geez.edit("Message Sended Successfully!!")
             await coli.send_message(user.id, spam_text,
                                       reply_to_messsge_id=reply_to_id)
             await asyncio.sleep(0.15)
@@ -41,7 +41,7 @@ async def dm(coli: Client, memek: Message):
 
     for _ in range(quantity):
         await coli.send_message(user.id, spam_text)
-        await geez.edit("Message Sended Successfully 😘")
+        await geez.edit("Message Sended Successfully!!")
         await asyncio.sleep(0.15)
 
 
