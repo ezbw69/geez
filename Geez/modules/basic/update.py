@@ -234,7 +234,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Geez-Userbot Deploy Update is in Progress...`"
+            "`[HEROKU]: 𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥 Deploy Update is in Progress...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -251,7 +251,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`Geez-Userbot Successfully Updated! Userbot can be used again.`"
+            "`𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥 Successfully Updated! 𝗛𝗘𝗥𝗢 can be used again.`"
         )
     else:
         try:
@@ -260,7 +260,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`Geez-Userbot Successfully Updated! Userbot can be used again.`",
+            "`𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥 Successfully Updated! 𝗛𝗘𝗥𝗢 can be used again.`",
         )
         args = [sys.executable, "-m", "Geez"]
         execle(sys.executable, *args, environ)
@@ -344,9 +344,9 @@ async def shutdown_bot(client: Client, message: Message):
         await client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**Geez-Pyro** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**𝗛𝗘𝗥𝗢** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(message, "**Geez-Pyro Berhasil di matikan!**")
+    await edit_or_reply(message, "**𝗛𝗘𝗥𝗢 Berhasil di matikan!**")
     if HAPP is not None:
         HAPP.process_formation()["worker"].scale(0)
     else:
