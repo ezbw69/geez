@@ -281,7 +281,7 @@ async def geez_log():
     if botlog_chat_id:
         return
    
-    group_name = "GeezPyro BotLog"
+    group_name = "𝗛𝗘𝗥𝗢𝗜𝗡𝗙𝗔𝗧𝗛𝗘𝗥 BotLog"
     group_description = 'This group is used to log my bot activities'
     group = await bot1.create_supergroup(group_name, group_description)
 
